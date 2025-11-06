@@ -125,3 +125,8 @@ module "ec2_instances" {
     environment = "development"
   }
 }
+
+module "s3-bucket-ccr-1" {
+  source  = "app.terraform.io/policy-as-code-training/s3-bucket-ccr-1/aws"
+  version = "1.1.1"
+}
